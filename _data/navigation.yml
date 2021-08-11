@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "About"#"Quick-Start Guide"
+    url: /about/ #https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#  - title: "Project"
+#    url: /categories/project/
+#  - title: "Study"
+#    url: /categories/study/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tag"
+    url: /tags/
