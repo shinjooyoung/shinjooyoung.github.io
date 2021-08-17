@@ -7,6 +7,7 @@ tag:
   - Java
   - Book
   - ModernJavaInAction
+toc: true
 ---
 
 ### 가독성과 유연성 개선하는 리팩토링
