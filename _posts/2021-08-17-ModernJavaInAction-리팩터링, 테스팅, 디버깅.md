@@ -7,7 +7,7 @@ tag:
   - Java
   - Book
   - ModernJavaInAction
-toc: true
+toc: false
 ---
 
 ### 가독성과 유연성 개선하는 리팩토링
@@ -211,7 +211,7 @@ new OnlineBankingLamda().processCustomer(1337, (Customer c) ->
     System.out:println("Hello "+ c.getName());
 ```
 람다를 활용시 OnlineBanking을 상속받지 않고 직접 랍다 표현시글 전달해서 다양한 동작을 추가할 수 있다.
-
+---
 
 ##### 옵저버 패턴
 > 어떤 이벤트가 발생했을때 한 객체(주제라 불리는)가 다른 객체 리스트(옵저버라 불리는)에 자동으로 알림을 보내야 한느 상황에서 옵저버 디자인 패턴을 이용한다.
@@ -283,6 +283,7 @@ f.registerObserver(new LeMonde());
 f.notifyObservers("The queen said her favorite book is Modern Java in Action!");
 ```
 
+
 람다 표현식 사용
 
 ``` java
@@ -302,6 +303,7 @@ f.registerObserver((String tweet) {
 ```
 위의 에제는 실행할 동자기 비교적 간단하므로 람다 표현식으로 불필요한 코드를 제거하는 것이 바람직하다.
 하지만 옵저버가 상태를 가지며, 여러 메서드를 정의하는 등 복잡하다면 람다 표현식보다 기존의 클래스 구현 방식을 고수하는 것이 바람직할 수도 있다.
+---
 
 ##### 의무 체인 패턴
 > 작업 처리 객체의 체인(동작 체인 등)을 만들 때는   의무 체인 패턴을 사용한다. 한객체가 어떤 작업을 처리한 다음에 다음에 다른객체로 결과를전달하고, 다른 객체도 해야 할 작업을처리한 다음에 또 다른 객체로 전달하는  식이다.
@@ -368,7 +370,7 @@ Function<String, String> pipeline =
 
 String result = pipeline.apply("Aren't ladas really sexy?!!");
 ```
-
+---
 
 
 
