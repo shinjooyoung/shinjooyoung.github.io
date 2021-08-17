@@ -23,39 +23,38 @@ toc: true
 1. 반환 타입의 하위 타입 객체를 반환할 수 있는 능력이 있다. 
   - 반환할 객체의 클래스를 자유롭게 선택할 수 있게 하는 엄청난 유연성을 선물한다. api를 만들때 이 유연성을 응용하면 구현 클래스를 공개하지 않고도 그 객체를 반환할수 있어 api를 작게 유지할 수 있다. 
   - 객체 반환시 자식 타입으로 반환하여 자유롭게 선택이가능하다.
-
-```java
-package com.org.joode;
-
-public class Parent {
-	public Parent() {
+  ```java
+	package com.org.joode;
+	
+	public class Parent {
+		public Parent() {
+		}
+	
+		public static Parent getChildInstance() {
+			return Child.getInstance();
+		}
+	
+		public static Parent getSecondChildInstance() {
+			return SecondChild.getInstance();
+		}
 	}
-
-	public static Parent getChildInstance() {
-		return Child.getInstance();
+	class Child extends Parent {
+		private Child() {
+		}
+	
+		public static Child getInstance() {
+			return new Child();
+		}
 	}
-
-	public static Parent getSecondChildInstance() {
-		return SecondChild.getInstance();
+	class SecondChild extends Parent {
+		private SecondChild() {
+		}
+	
+		public static SecondChild getInstance() {
+			return new SecondChild();
+		}
 	}
-}
-class Child extends Parent {
-	private Child() {
-	}
-
-	public static Child getInstance() {
-		return new Child();
-	}
-}
-class SecondChild extends Parent {
-	private SecondChild() {
-	}
-
-	public static SecondChild getInstance() {
-		return new SecondChild();
-	}
-}
-```
+  ```
 1.  입력 매개변수에 따라 매번 다른 클래스의 객체를 반환할 수 있다.
   - 반환 타입의 하위 타입이기만 하면 어떤 클래스의 객체를 반환하든 상관없다.
   - JDBC 같은 경우 매개변수에 따라 해당 DB JDBC 객체를 반환한다.
