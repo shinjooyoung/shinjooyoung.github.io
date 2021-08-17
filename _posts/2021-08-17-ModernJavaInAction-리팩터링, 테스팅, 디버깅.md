@@ -211,6 +211,7 @@ new OnlineBankingLamda().processCustomer(1337, (Customer c) ->
     System.out:println("Hello "+ c.getName());
 ```
 람다를 활용시 OnlineBanking을 상속받지 않고 직접 랍다 표현시글 전달해서 다양한 동작을 추가할 수 있다.
+
 ---
 
 ##### 옵저버 패턴
@@ -303,6 +304,7 @@ f.registerObserver((String tweet) {
 ```
 위의 에제는 실행할 동자기 비교적 간단하므로 람다 표현식으로 불필요한 코드를 제거하는 것이 바람직하다.
 하지만 옵저버가 상태를 가지며, 여러 메서드를 정의하는 등 복잡하다면 람다 표현식보다 기존의 클래스 구현 방식을 고수하는 것이 바람직할 수도 있다.
+
 ---
 
 ##### 의무 체인 패턴
@@ -370,6 +372,7 @@ Function<String, String> pipeline =
 
 String result = pipeline.apply("Aren't ladas really sexy?!!");
 ```
+
 ---
 
 
