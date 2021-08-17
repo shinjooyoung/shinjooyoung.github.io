@@ -349,6 +349,8 @@ System.out.println(result);
 ```
 
 람다 표현식
+작업 처리 객체를 Function<String, string>, 더 정확히 표현하자면 UnaryOperator<String> 형식의 인스턴스로 표현할 수 있다.
+and then 메서드로 이들함수를 조합해서 체임을 만들 수 있다.
 
 ``` java
 // 첫번째 작업 처리 객체
