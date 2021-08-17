@@ -1,5 +1,5 @@
 ---
-title:  "백준 18405 "
+title:  "백준 18405 경쟁적 전염"
 excerpt: "알고리즘 테스트"
 categories:
   - Algorithm

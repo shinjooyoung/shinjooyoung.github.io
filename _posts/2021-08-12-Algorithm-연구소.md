@@ -1,5 +1,5 @@
 ---
-title:  "백준 14502 "
+title:  "백준 14502 연구소"
 excerpt: "알고리즘 테스트"
 categories:
   - Algorithm
