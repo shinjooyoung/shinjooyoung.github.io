@@ -1,5 +1,5 @@
 ---
-title:  "생성자 대신 정적 팩터리 메서드 고려"
+title:  "생성자 대신 정적 팩터리 메서드 고려하라"
 excerpt: "JavaEffective 정리 "
 categories:
   - Study
