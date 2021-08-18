@@ -1,12 +1,11 @@
 ---
 title:  "생성자 대신 정적 팩터리 메서드 고려하라"
-excerpt: "JavaEffective 정리 "
+excerpt: "JavaEffective 1장 "
 categories:
   - Study
 tag:
   - Java
-  - Book
-  - JavaEffective
+  - EffectiveJava
 toc: true
 ---
 

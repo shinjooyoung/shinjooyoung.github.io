@@ -1,10 +1,11 @@
 ---
 title:  "Spring-웹 애플리케이션 개발"
-excerpt: "스프링 인 액션 5 공부"
+excerpt: "스프링 인 액션 5"
 categories:
   - Study
 tag:
   - Spring
+  - SpringInAction
 toc: true
 ---
 

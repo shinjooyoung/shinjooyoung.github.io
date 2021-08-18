@@ -1,11 +1,10 @@
 ---
 title:  "람다, 함수형 인터페이스"
-excerpt: "모던 자바 인 액션 정리 "
+excerpt: "모던 자바 인 액션 "
 categories:
   - Study
 tag:
   - Java
-  - Book
   - ModernJavaInAction
 toc: true
 ---

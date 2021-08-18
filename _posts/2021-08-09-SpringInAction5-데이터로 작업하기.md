@@ -1,10 +1,11 @@
 ---
 title:  "Spring-데이터로 작업하기"
-excerpt: "스프링 인 액션 5 공부"
+excerpt: "스프링 인 액션 5"
 categories:
   - Study
 tag:
   - Spring
+  - SpringInAction
 toc: true
 ---
 

@@ -4,7 +4,8 @@ excerpt: "스프링 인 액션 5 공부"
 categories:
   - Study
 tag:
-  - SpringInAction5
+  - Spring
+  - SpringInAction
 toc: false
 ---
 

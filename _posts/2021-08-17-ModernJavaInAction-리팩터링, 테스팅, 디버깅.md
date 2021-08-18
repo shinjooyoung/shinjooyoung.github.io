@@ -1,11 +1,10 @@
 ---
 title:  "리팩터링, 테스팅, 디버깅"
-excerpt: "모던 자바 인 액션 정리 "
+excerpt: "모던 자바 인 액션 "
 categories:
   - Study
 tag:
   - Java
-  - Book
   - ModernJavaInAction
 toc: false
 ---

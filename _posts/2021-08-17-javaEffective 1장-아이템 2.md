@@ -1,12 +1,11 @@
 ---
 title:  "생성자에 매개변수가 많다면 빌더를 고려하라"
-excerpt: "JavaEffective 정리 "
+excerpt: "JavaEffective 1장 "
 categories:
   - Study
 tag:
   - Java
-  - Book
-  - JavaEffective
+  - EffectiveJava
 toc: true
 ---
 
