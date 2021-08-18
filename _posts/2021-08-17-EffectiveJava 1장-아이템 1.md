@@ -1,6 +1,6 @@
 ---
 title:  "생성자 대신 정적 팩터리 메서드 고려하라"
-excerpt: "JavaEffective 1장 "
+excerpt: "EffectiveJava 1장 "
 categories:
   - Study
 tag:

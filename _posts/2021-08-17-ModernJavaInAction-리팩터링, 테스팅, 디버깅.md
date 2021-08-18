@@ -88,7 +88,7 @@ menu.parallelstream()
 > 다양한 람다를 전달해서 다양한 동작을표현할 수 있다. 따라서 변화하는 요구상에대응할 수 있는 코드를 구현할 수 있다.
 
 
-**조건부 연기 시행**
+**조건부 연기 시행**  
 내장 자바 Logger 클래스를 사용하는 예제이다. isLoggabe 메서드가 클라이언트로 노출되고 메시지를 로깅할때마다 상태를 매번 확인해야한다.
   
 ``` java
@@ -162,7 +162,7 @@ boolean b2 = lowerCaseValidator.validate("bbbb"); // true
 
 ```
 
-**람다 표현식** 
+**람다 표현식**  
 다양한 전략을 구현하는 새로운 클래스를 구현할 필요 없이 람다 표현식을 직접 전달하면 코드가 간결해진다.
 
 ``` java
@@ -175,7 +175,7 @@ Validator lowerCaseValidator =
 boolean b2 = lowerCaseValidator.validate("bbbb"); // true
 ```
 
-###### 탬플릿 메서드
+##### 탬플릿 메서드
 > 알고리즘의 개요를 제시한 다음에 알고리즘의 일부를 고칠 수 있는 유연함을 제공할때 사용한다.
 > 간단하게 '이 알고리즘을 사용하고 싶은데 그대로는 안되고 조금 고쳐야 하는 상황'에 적합하다.
 
@@ -195,7 +195,7 @@ processCustomer 메서드는 온라인뱅킹 알고리즘이 해야 할 일을 �
 각각의 지점(상속받는 클래스)은 OnlineBanking 클래스를 상속받아 makeCustomerHappy 메서드가 원하는 동작을 수행하도록 구현(오버라이딩)할 수 있다.
 
 
-**람다 표현식** 
+**람다 표현식**  
 
 ``` java
 public class OnlineBankingLamda {
@@ -283,7 +283,7 @@ f.notifyObservers("The queen said her favorite book is Modern Java in Action!");
 ```
 
 
-**람다 표현식** 
+**람다 표현식**
 
 ``` java
 Feed f = new Feed();
@@ -351,7 +351,7 @@ System.out.println(result);
 // From Raoul, Mario and Alan: Aren't lambda really sexy?!!
 ```
 
-**람다 표현식**
+**람다 표현식**  
 작업 처리 객체를 Function<String, string>, 더 정확히 표현하자면 UnaryOperator<String> 형식의 인스턴스로 표현할 수 있다.
 and then 메서드로 이들함수를 조합해서 체임을 만들 수 있다.
 
@@ -377,7 +377,7 @@ String result = pipeline.apply("Aren't ladas really sexy?!!");
 
 >인스턴스화 로직을 클라이언트에 노출하지 않고 객체를 만들 때 팩토리 디자인 패턴을 사용한다.
 
-**예시**
+**예시**  
 다양한 상품을 만드는 Factory 클래스이다. 여기서 Loan, stock, Bond는 모두 product의 서브형식이다.
 
 ``` java
@@ -396,7 +396,7 @@ public class productFactory{
 product p = productFactory.createProduct("loan");
 ```
 
-**람다 표현식 사용**
+**람다 표현식 사용**  
 생성자도 메서드 참조처럼 접근할 수 있다. 
 
 ``` java
@@ -431,7 +431,7 @@ public static Product createproduct(String name){
 
 >일반적으로 좋은소프트웨어 공학자라면 프로그램이 의도대로 동작하는지 확인할 수 있는 단위 테스팅을진행한다.
 
-** 보이는 람다 표션식의 동작 테스팅**
+** 보이는 람다 표션식의 동작 테스팅**  
 람다는 익명이므로 테스트 코드이름을 호출할수 없다. 필요하다면 람다를 필드에 저장해서 재사용 할 수 있으며 람다의 로직을 테스트할수 있다.  
 
 ``` java
@@ -454,7 +454,7 @@ public void testComparingTwoPoints() throws Exception {
 ```
 
 
-**람다를 사용하는 메서드의 동작에 집중**
+**람다를 사용하는 메서드의 동작에 집중**  
 람다의 목표는 정해진 동작을 다른 메서드에서 사용할 수 있도록 하나의 조각으로 캡슐화하는 것이다. 그러려면 세부 구현을 포함하는 람다 표현식을 공개하지 말아야 한다.
 
 
@@ -483,11 +483,11 @@ public void testMoveAllPointsRightBy() throws Exception {
 위 단위 테스트에서 보여주는 것처럼 Point 클래스의 equals 메서드는 중요한 메서드다. 따라서 Object의 기본적인 equals 구현을 그대로 사용하지 않으려면 equals 메서드를 적절하게 구현해야 한다.
 
 
-**복잡한 람다를 개별 메서드로 분할하기**
+**복잡한 람다를 개별 메서드로 분할하기**  
 람다 표현식은 참조할 수 없다, 테스트를 위해서는 표현식을 메서드로 만들어 메서드 참조로 바꾸는 것이다. 그러면 일반 메서드를 테스트하듯이 람다 표현식을 테스트할 수 있다.
 
 
-**고차원 함수 테스팅**
+**고차원 함수 테스팅**  
 함수를 인수로 받거나 받거나 다른함수를 반환하는 메서드(고차원 함수)는 메서드가 람다를 인수로 받는다면 다른 람다로 메서드의동작을 테스트 할 수 있다.
 
 ``` java
@@ -505,17 +505,17 @@ public void testFilter() throws Exception {
 
 >문제가 발생한 코드를 디버깅할때 개발자는 **스택 트레이스**, **로깅**을 가장 먼저 확인해야 한다.
 
-**스택 트레이스**
+**스택 트레이스**  
 외 발생으로 프로그램 실행이 갑자기 중단되었다면 어디에서 멈췄고 어떻게 멈추게 되었는지를 스택 프레임에서 확인 가능하다.
 
 
 
-**람다와 스택 트레이스 **
+**람다와 스택 트레이스 **  
 람다 표현식은 이름이 없기 때문에 조금 복잡한 스택트레이스가 생성된다. 람다 표현식에서 에러가 발생시에는 lambda$main$0 표시된다.  
 메서드 참조를 사용하는 경우에는 클래스와 같은 곳에 선언되어 있을때만 표시가 된다.
 
 
-**정보 로깅**
+**정보 로깅**  
 peek은 스림의각 요소를 소비한 것처럼 동작을실행한다 . 하지만 forEach처럼  실제로 소비를 하지 않아 자신이 확인한 요소를 다음 연산에 그대로 전달한다.
 
 
