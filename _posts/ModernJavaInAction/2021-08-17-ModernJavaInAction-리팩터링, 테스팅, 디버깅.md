@@ -513,7 +513,16 @@ public void testFilter() throws Exception {
 
 
 **정보 로깅**  
-peek은 스림의각 요소를 소비한 것처럼 동작을실행한다 . 하지만 forEach처럼  실제로 소비를 하지 않아 자신이 확인한 요소를 다음 연산에 그대로 전달한다.
+스트림의 파이프 라인에서 연산을 한는 중 forEach를 호출하면 호출한 순간 스트림은 소비가 된다. 각 연산의 결과들을 확인하려면 peek을 사용하면 된다. peek은 스트림을 소비한 것처럼 동작한다.
+
+``` java
+List<Integer> result = numbers.stream()
+									.peak(x->System.out.println("from stream : " + x))
+									.map(x->x+17)
+									.peak(x->System.out.println("after map: " + x))
+									.filter(x->x%2==0)
+									.peak(x->System.out.println("after filter: " + x))
+```
 
 
 
