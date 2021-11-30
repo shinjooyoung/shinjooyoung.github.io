@@ -117,12 +117,12 @@ protected void render(ModelAndView mv, HttpServletRequest request, HttpServletRe
 
 #### HTTP 메시지 컨버터
 
-**Argument Resolver**
+**Argument Resolver**  
 컨트롤러의 파라미터는 * @RequestParam, @ModelAttribute, HttpServletRequeste 등 다양한 타입의 객채를 입력하면 제공해준다.  
 DispatcherServlet 핸들러 처리를 위해 어댑터를 호출하면 Argument Resolver를 호출하고 Argument Resolver는 컨트롤러가 필요하다고 파라미터에 입력한 객체들을 생성해준다. 이때 Model, HttpServletRequest, @ModelAttrivute등 컨트롤러가 요청한 객체를 생성하여 파라미터로 넘겨준다.  
 이렇듯 Argument Resolver는 다양성을 제공해준다.
 
-**ReturnValue Handler**
+**ReturnValue Handler**  
 Argument Resolver가 제공한 파라미터를 사용한 컨트롤러는 결과 값을 반환하는데 뷰 상태경로, ModelAndView, @ResponseBody 등 다양한 반환형식을 지원하는데, 컨트롤러의 반환값은 ReturnValue Handler로 넘겨져 형식에 알맞는 처리를 수행하게 된다.
 
 >Argument Resolver는 컨트롤러가 파라미터에 요청한 다양한 객체들을 생성해서 넘겨주고 ReturnValue Handler는 컨트롤러의 다양한 반환값에 알맞는 처리를 해준다. 둘 모두 핸들러 어댑터와 값을 주고 받는다.
