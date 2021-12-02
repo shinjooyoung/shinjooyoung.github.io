@@ -1,5 +1,5 @@
 ---
-title:  "state"
+title:  "command"
 excerpt: "디자인 패턴"
 categories:
   - Study
