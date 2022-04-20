@@ -59,7 +59,7 @@ toc: true
 
 **인터럽트**
 - 인터럽트
-  * 인터럽트 당한 시점의 레지스터와 program counter를 save 한 후 cpu의 제어르 ㄹ인터럽트 처리 루틴에 넘긴다.
+  * 인터럽트 당한 시점의 레지스터와 program counter를 save 한 후 cpu의 제어를 인터럽트 처리 루틴에 넘긴다.
 - Interrupt(넓은 의미)
   * Interrupt(하드웨어 인터럽트) : 하드웨어가 발생시킨 인터럽트
   * trap(소프트웨어 인터럽트)
